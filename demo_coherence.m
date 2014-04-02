@@ -117,6 +117,7 @@ EER = pmiss(min(find(pmiss > pfa)));
 disp(['Equal Error Rate = ', sprintf('%.1f', EER*100), '%']);
 
 % Plot the results
+subplot(111)
 Plot_DET(pmiss, pfa, 'r');
 title(['Detection Error Tradeoff for XC threshold ',num2str(xct)])
 % Print figure 5 from the paper
